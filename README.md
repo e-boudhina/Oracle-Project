@@ -1,16 +1,19 @@
 # Oracle-Project
 
-# ========> ** Voilà ce que résout ce projet ** <========
+# ==> ** Voilà ce que résout ce projet ** <==
 
 
 On vous donne le schéma de base de données ADMMEDIC suivant qui représente les visites dans un nouveau centre médical.
-Medecin(matricule, nom_med, prenom_med, specialite)
-Patient(noss,nom_pat, prenom_pat, nbpriseMax, quantiteMax)
-Medicament(code_med, libelle)
-Consultation(Num_consul, date_consult, #matricule, #noss)
-Prescription(#code_med, #Num_consul, nbprise, quantite)
-Travail demandé
+
+Medecin(matricule, nom_med, prenom_med, specialite).
+Patient(noss,nom_pat, prenom_pat, nbpriseMax, quantiteMax).
+Medicament(code_med, libelle).
+Consultation(Num_consul, date_consult, #matricule, #noss).
+Prescription(#code_med, #Num_consul, nbprise, quantite).
+
+Travail demandé :
 En utilisant Oracle comme système de gestion de base des données, on vous demande de répondre aux questions suivantes :
+
 1. Création des tables.
 2. Remplissage des tables par des données fictives.
 3. Création des séquences et des trigger nécessaires pour l’alimentation des clés primaires des tables.
